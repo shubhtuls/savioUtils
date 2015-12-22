@@ -39,6 +39,14 @@ packageDir=/global/home/users/shubhtuls/packages
 #make && make install
 #cd packageDir
 
+## snappy
+git clone https://github.com/google/snappy.git
+cd snappy
+bash ./autogen.sh
+./configure --prefix=/global/home/users/shubhtuls/local/
+make && make install
+cd packageDir
+
 ## leveldb
 git clone https://github.com/google/leveldb.git
 cd leveldb
